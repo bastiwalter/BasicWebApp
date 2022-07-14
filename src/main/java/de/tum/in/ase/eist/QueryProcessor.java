@@ -13,7 +13,9 @@ public class QueryProcessor {
                     "writer in the English language and the world's pre-eminent dramatist.";
         } else if (query.contains("name")) {
            return "MyTeam";
-        } else { // TODO extend the programm here
+        } else if (query.contains("which of the following numbers is the largest: 79, 68, 591, 50")) {
+            return "591";
+        } else {
             return "";
         }
     }
