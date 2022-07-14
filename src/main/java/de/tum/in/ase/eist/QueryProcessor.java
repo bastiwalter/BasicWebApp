@@ -13,7 +13,7 @@ public class QueryProcessor {
                     "writer in the English language and the world's pre-eminent dramatist.";
         } else if (query.contains("name")) {
            return "MyTeam";
-        } else if (query.contains("which of the following numbers is the largest")) {
+        } else if (query.contains("largest")) {
             String[] a = query.trim().split(":");
             String numbers = a[2];
             String[] ints = numbers.split(",");
