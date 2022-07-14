@@ -14,9 +14,9 @@ public class QueryProcessor {
         } else if (query.contains("name")) {
            return "MyTeam";
         } else if (query.contains("which of the following numbers is the largest")) {
-            String[] a = query.split(":");
+            String[] a = query.trim().split(":");
             String numbers = a[2];
-            String[] ints = numbers.split(", ");
+            String[] ints = numbers.split(",");
             int[] res = new int[ints.length];
             for (int i = 0; i < ints.length; ++i) {
                 res[i] = Integer.parseInt(ints[i]);
